@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;br.senai.sp.api.model.VeiculoMensalista&apos; to &apos;VeiculoMensalista2&apos;&#x0D;&#x0A;- Original project: &apos;Api Estacionamento&apos;&#x0D;&#x0A;- Original element: &apos;br.senai.sp.api.model.VeiculoMensalista&apos;&#x0D;&#x0A;- Renamed element: &apos;br.senai.sp.api.model.VeiculoMensalista2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VeiculoMensalista&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;br.senai.sp.api.model{VeiculoMensalista.java[VeiculoMensalista" matchStrategy="1" name="VeiculoMensalista2" qualified="false" references="true" similarDeclarations="false" stamp="1558630750423" textual="false" version="1.0"/>
+</session>

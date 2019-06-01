@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Saida">
+
+    <include layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtplaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="Placa: "
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/txt_placa_saida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="26sp"
+            android:layout_toRightOf="@id/txtplaca"
+            android:layout_marginTop="8dp"
+            />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtmodelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="Modelo: "
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:id="@+id/txt_modelo_saida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="26sp"
+                android:layout_toRightOf="@id/txtmodelo"
+                android:layout_marginTop="8dp"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txthora1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="Entrada: "
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:id="@+id/horario_entrada_saida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="26sp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/txthora1"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txthora2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="Saída: "
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:id="@+id/horario_saida_saida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="26sp"
+                android:layout_toRightOf="@id/txthora2"
+                android:layout_marginTop="8dp"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/card_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txttotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="36sp"
+                android:hint="Total a Pagar:"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="36sp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:layout_below="@id/txttotal"
+                android:textColor="@color/colorBlack"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="25dp"
+            android:textColor="@color/colorWhite"
+            android:paddingBottom="25dp"
+            android:text="CONFIRMAR SAÍDA"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Estaciona Fácil</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+    <string name="escolha">Escolha</string>
+    <string-array name="tipo_veiculo_array">
+        <item>Moto</item>
+        <item>Utilitário</item>
+        <item>Passeio</item>
+    </string-array>
+</resources>

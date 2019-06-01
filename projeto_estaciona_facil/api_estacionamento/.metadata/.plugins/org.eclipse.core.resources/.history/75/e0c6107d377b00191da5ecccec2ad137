@@ -1,0 +1,21 @@
+package br.senai.sp.api.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tbl_mensalista")
+public class Mensalista {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String nome;
+	private String cpf;
+	private String telefone;
+	private String qtd_vagas;
+	
+}

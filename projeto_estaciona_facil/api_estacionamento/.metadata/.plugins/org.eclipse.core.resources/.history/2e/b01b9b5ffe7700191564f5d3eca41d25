@@ -1,0 +1,52 @@
+package br.senai.sp.api.model;
+
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tbl_preco")
+public class Preco {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private Double valorPrimeiraHora;
+	private Double valorDemaisHoras;
+	private String dataFim;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Double getValorPrimeiraHora() {
+		return valorPrimeiraHora;
+	}
+	public void setValorPrimeiraHora(Double valorPrimeiraHora) {
+		this.valorPrimeiraHora = valorPrimeiraHora;
+	}
+	public Double getValorDemaisHoras() {
+		return valorDemaisHoras;
+	}
+	public void setValorDemaisHoras(Double valorDemaisHoras) {
+		this.valorDemaisHoras = valorDemaisHoras;
+	}
+	public String getDataFim() {
+		return dataFim;
+	}
+	public void setDataFim(String dataFim) {
+		this.dataFim = dataFim;
+	}
+	@Override
+	public String toString() {
+		return "Preco [id=" + id + ", valorPrimeiraHora=" + valorPrimeiraHora + ", valorDemaisHoras=" + valorDemaisHoras
+				+ ", dataFim=" + dataFim + "]";
+	}
+	
+	
+	
+}

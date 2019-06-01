@@ -1,0 +1,20 @@
+package br.senai.sp.api.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import br.senai.sp.api.model.Mensalista;
+import br.senai.sp.api.model.Veiculo;
+import br.senai.sp.api.model.VeiculoMensalista;
+
+public interface VeiculoMensalistaRepository extends JpaRepository<VeiculoMensalista, Long> {
+
+	@Query("SELECT v from VeiculoMensalista")
+
+	
+	//@Query("select m from Mensalista m where m.cpf = ?1")
+	//Mensalista findByCpf(String cpf);
+	
+}

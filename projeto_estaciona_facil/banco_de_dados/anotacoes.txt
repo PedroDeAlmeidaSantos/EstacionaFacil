@@ -1,0 +1,5 @@
+TIMESTAMPDIFF(second, dt_entrada, dt_saida) from tbl_hora
+TIMESTAMPDIFF(minutes, dt_entrada, dt_saida) from tbl_hora
+
+>netstat -aon
+taskkill -f /pid 10160

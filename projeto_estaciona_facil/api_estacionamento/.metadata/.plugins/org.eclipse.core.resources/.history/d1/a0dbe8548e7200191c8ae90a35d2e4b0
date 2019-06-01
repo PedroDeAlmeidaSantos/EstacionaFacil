@@ -1,0 +1,45 @@
+package br.senai.sp.api.resource;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import br.senai.sp.api.model.Veiculo;
+
+public class Pagamento {
+	
+	public static int getHora(String horarioEntrada, String horarioSaida) {
+		
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		double horasPagar = 0;
+		
+		try {
+			Date hrEntrada = df.parse(horarioEntrada);
+			Date hrSaida = new Date();
+			
+			Long milisigundos = hrSaida.getTime() - hrEntrada.getTime();
+			
+			double minutos = milisigundos / 1000 / 60;
+			
+			double horas = (int) minutos / 60;
+			double minutosExcedidos = minutos - horas * 60;
+			
+			if((minutos > horas * 60)) {
+				if((minutos - horas * 60) > 5) {
+					horasPagar = horas + 1;
+				}else {
+					horasPagar = horas;
+				}
+				
+			}
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	
+		
+		return (int)horasPagar;
+	}
+	
+	
+}

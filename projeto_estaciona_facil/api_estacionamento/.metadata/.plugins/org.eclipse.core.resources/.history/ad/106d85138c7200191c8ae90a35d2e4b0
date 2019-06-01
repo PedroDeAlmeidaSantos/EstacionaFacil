@@ -1,0 +1,32 @@
+package br.senai.sp.api.resource;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import br.senai.sp.api.model.Veiculo;
+
+public class Pagamento {
+
+	public int getHoras(String horarioEntrada, String horarioSaida) {
+		
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		double horasPagar = 0;
+		//Veiculo veiculo = new Veiculo();
+		
+		try {
+			Date hrEntrada = df.parse(horarioEntrada);
+			Date hrSaida = df.parse(horarioSaida);
+			
+			
+			System.out.println("ENTRADA:" + hrEntrada);
+			
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+			
+		return (int) horasPagar;
+	}
+	
+	
+}

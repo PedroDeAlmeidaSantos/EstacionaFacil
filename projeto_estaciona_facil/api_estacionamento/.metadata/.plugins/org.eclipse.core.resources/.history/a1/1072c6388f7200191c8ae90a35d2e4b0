@@ -1,0 +1,17 @@
+package br.senai.sp.api.resource;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import br.senai.sp.api.model.Veiculo;
+
+public class Pagamento {
+	
+	public static String getHora(){
+	
+		
+		return null;
+	}
+	
+	
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Movimentação">
+        <menu android:checkableBehavior="single">
+            <item android:title="Registrar Entrada"
+                android:id="@+id/menu_entrada"
+                android:icon="@drawable/ic_car"/>
+
+            <item android:title="Estacionados"
+                android:id="@+id/menu_estacionados"
+                android:icon="@drawable/ic_estacionado"/>
+
+            <item android:title="Saída"
+                android:id="@+id/menu_saida"
+                android:icon="@drawable/ic_saida"/>
+        </menu>
+    </item>
+    <item android:title="Preços">
+
+            <menu android:checkableBehavior="single">
+
+                <item android:title="Cadastrar Preço"
+                    android:id="@+id/menu_cadastrar_preco"
+                    android:icon="@drawable/ic_preco"/>
+
+            </menu>
+
+    </item>
+    <item android:title="Mensalistas">
+
+        <menu android:checkableBehavior="single">
+
+            <item android:title="Cadastrar Mensalista"
+                android:id="@+id/menu_cadastrar_mensalista"
+                android:icon="@drawable/ic_mensalista"/>
+
+        </menu>
+
+    </item>
+</menu>
